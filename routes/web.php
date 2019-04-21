@@ -14,6 +14,6 @@
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/tabel', 'belajar@index');
-
-Route::post('/insert','Controller@insert');
+Route::get('/tabel', function () {
+    return view('tabell');
+});
